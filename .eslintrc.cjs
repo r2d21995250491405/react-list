@@ -1,0 +1,25 @@
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+  ],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parserOptions: { ecmaVersion: "latest", sourceType: "module" },
+  settings: { react: { version: "18.2" } },
+  plugins: ["react-refresh"],
+  rules: {
+    semi: ["error", "always"],
+    quotes: ["error", "single"],
+    indent: ["error", 2],
+    "comma-dangle": ["error", "always-multiline"],
+    "prefer-template": "error",
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "no-var": "error",
+    eqeqeq: "error",
+  },
+};

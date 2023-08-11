@@ -1,0 +1,32 @@
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007bff;
+    }
+
+    &.active {
+      color: rgb(49, 42, 42);
+      border-bottom: 3px solid #007bff;
+    }
+
+    &.dark-theme {
+      color: #fff; /* Цвет текста в темной теме */
+    }
+
+    &.dark-theme.active {
+      border-bottom-color: #fff;
+    }
+  }
+}
