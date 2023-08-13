@@ -3,8 +3,9 @@ import "./tabs_style.scss";
 
 class TabsComponent extends Component {
   state = {
-    activeTab: "all",
+    activeTab: "active",
   };
+  
 
   handleTabChange = (tab) => {
     this.setState({ activeTab: tab });
@@ -13,6 +14,7 @@ class TabsComponent extends Component {
 
   render() {
     const { activeTab } = this.state;
+    console.log(activeTab);
     const themeClass = this.props.theme === "dark" ? "dark-theme" : "light-theme";
 
     return (
