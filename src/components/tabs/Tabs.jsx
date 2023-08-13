@@ -14,7 +14,6 @@ class TabsComponent extends Component {
 
   render() {
     const { activeTab } = this.state;
-    console.log(activeTab);
     const themeClass = this.props.theme === "dark" ? "dark-theme" : "light-theme";
 
     return (
