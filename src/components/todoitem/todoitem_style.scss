@@ -1,5 +1,3 @@
-/* TodoItem.scss */
-
 .todo-item {
   display: flex;
   align-items: flex-start;
@@ -18,7 +16,6 @@
   &.archived {
     color: gray;
     opacity: 0.6;
-    // pointer-events: none;
     input[type="checkbox"] {
       pointer-events: none;
     }
